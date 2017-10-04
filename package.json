@@ -1,7 +1,17 @@
 {
   "name": "ramme",
   "version": "3.3.0",
-  "author": "Terkel Gjervig, Anatoli Nicolae",
+  "author": "Anatoli Nicolae <anatoli@ramme.co>",
+  "contributors": [{
+    "author": "Terkel Gjervig",
+    "email" : "terkel@ramme.co"
+  }, {
+    "author": "Bil Elmoussaoui",
+    "email": "bil@ramme.co"
+  }, {
+    "author": "Elijah Duffy",
+    "email": "elijah@ramme.co"
+  }],
   "description": "Unofficial Instagram Desktop App",
   "license": "MIT",
   "main": "./dist/electron/main.js",

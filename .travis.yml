@@ -6,10 +6,11 @@ os:
   - linux
 
 cache:
+  yarn: true
   directories:
-  - node_modules
-  - "$HOME/.electron"
-  - "$HOME/.cache"
+    - node_modules
+    - "$HOME/.electron"
+    - "$HOME/.cache"
 
 addons:
   apt:
@@ -21,12 +22,6 @@ addons:
       - bsdtar
       - gcc-multilib
       - g++-multilib
-
-install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - source ~/.bashrc
-  - npm install -g xvfb-maybe
-  - yarn
 
 script:
   - yarn run build
